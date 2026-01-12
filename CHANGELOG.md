@@ -1,5 +1,9 @@
 # Changelog
 
+# v4.5.1 (2026-01-12)
+
+* Fixed iterators to propagate string type if the iterated set is set of strings
+
 # v4.5.0 (2025-08-29)
 
 * Upgraded major versions of dependencies

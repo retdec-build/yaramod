@@ -653,7 +653,7 @@ void ParserDriver::defineGrammar()
 	if (_features & Features::AvastOnly)
 	{
 		_parser.rule("variables") // vector<Variable>
-			.production("VARIABLES", "COLON", "variables_body", [this](auto&& args) -> Value {
+			.production("VARIABLES", "COLON", "variables_body", [](auto&& args) -> Value {
 				args[1].getTokenIt()->setType(TokenType::COLON_BEFORE_NEWLINE);
 				return std::move(args[2]);
 			})

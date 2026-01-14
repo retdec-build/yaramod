@@ -1,5 +1,9 @@
 # Changelog
 
+# v4.5.2 (2026-01-14)
+
+* Fixed iterators to propagate integer type for range-based for loops
+
 # v4.5.1 (2026-01-12)
 
 * Fixed iterators to propagate string type if the iterated set is set of strings

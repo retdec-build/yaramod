@@ -1165,7 +1165,7 @@ void ParserDriver::defineGrammar()
 				// Determine the type of the symbol based on the type of the first element in the set with fallback to int
 				// for_expression_set can be either SetExpression (enumeration) or RangeExpression (range)
 				auto iterType = Expression::Type::Int;
-				if (auto iterSet = std::dynamic_pointer_cast<const SetExpression>(args[4].getExpression()))
+				if (auto iterSet = args[4].getExpression()->template as<SetExpression>())
 				{
 					if (!iterSet->getElements().empty())
 						iterType = iterSet->getElements()[0]->getType();

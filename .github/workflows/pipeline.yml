@@ -155,6 +155,9 @@ jobs:
           - runs-on: ubuntu-latest
             platform: linux
             arch: manylinux_x86_64
+          - runs-on: ubuntu-24.04-arm
+            platform: linux
+            arch: manylinux_aarch64
           - runs-on: windows-latest
             platform: windows
             arch: win_amd64

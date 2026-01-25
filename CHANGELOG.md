@@ -1,5 +1,10 @@
 # Changelog
 
+# v4.6.0 (2026-01-25)
+
+* Added releases for `linux/arm64`
+* Improvements and fixes of type stubs
+
 # v4.5.2 (2026-01-14)
 
 * Fixed iterators to propagate integer type for range-based for loops

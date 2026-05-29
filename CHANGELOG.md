@@ -1,5 +1,9 @@
 # Changelog
 
+# v4.7.0 (2026-05-29)
+
+* Added exclusive module paths API to `Yaramod`, `ParserDriver`, and `ModulePool` — pass a list of JSON file paths to load only those modules and skip all built-in ones ([#290](https://github.com/avast/yaramod/pull/290))
+
 # v4.6.0 (2026-01-25)
 
 * Added releases for `linux/arm64`
